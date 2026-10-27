@@ -67,7 +67,7 @@ mod game {
             if kb.pressed(KeyCode::KeyD) {
                 input.dir.x += 1.;
             }
-            input.dir.normalize();
+            let _ = input.dir.normalize();
         }
     }
     fn move_system(
